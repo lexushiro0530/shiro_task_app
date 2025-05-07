@@ -1,0 +1,53 @@
+.title {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+.tasks {
+    display: flex;
+    flex-direction: column;
+    flex-direction: center;
+    align-items: center;
+    font-size: 40px;
+}
+.task {
+    display: flex;
+    margin: 20px 0;
+}
+.task_label {
+    border: 1px solid #ceecf8;
+    border-radius: 20px;
+    padding: 0 20px;
+    background-color: #ceecf8;
+    margin: 0 10px;
+}
+.task_title {
+    margin: 0 20px;
+}
+.createButton,
+.editButton,
+.deleteButton {
+    margin: 0 10px;
+    padding: 0 30px;
+    font-size: 20px;
+}
+.createButton {
+    border: 1px solid;
+    padding: 20px 30px;
+}
+.filter {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin: 15px 0;
+}
+.filter p {
+    margin: 0 10px;
+}
+.filter button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    margin: 0 10px;
+}
