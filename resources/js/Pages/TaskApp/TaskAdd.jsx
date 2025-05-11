@@ -1,6 +1,7 @@
 import { useForm, router } from "@inertiajs/react"
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from '@fullcalendar/daygrid';
+import interactionPlugin from '@fullcalendar/interaction'
 import AuthenticatedLayout from "../../Layouts/AuthenticatedLayout";
 import TextInput from "../../Components/TextInput";
 import InputLabel from "../../Components/InputLabel";
@@ -68,7 +69,7 @@ const TaskAdd = () => {
                     value={data.due}
                     readOnly/>
                 <FullCalendar 
-                    plugins={[dayGridPlugin]} 
+                    plugins={[dayGridPlugin, interactionPlugin]} 
                     initialView="dayGridMonth" 
                     dateClick={(arg) => {
                         console.log("Clicked date:", arg.dateStr);
